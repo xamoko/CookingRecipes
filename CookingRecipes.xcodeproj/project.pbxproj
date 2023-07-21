@@ -16,6 +16,11 @@
 		4823FD332A66680A00F54F67 /* CookingRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD322A66680A00F54F67 /* CookingRecipesTests.swift */; };
 		4823FD3D2A66680A00F54F67 /* CookingRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD3C2A66680A00F54F67 /* CookingRecipesUITests.swift */; };
 		4823FD3F2A66680A00F54F67 /* CookingRecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD3E2A66680A00F54F67 /* CookingRecipesUITestsLaunchTests.swift */; };
+		4823FD4D2A6668F000F54F67 /* NetworkConnectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD4C2A6668F000F54F67 /* NetworkConnectData.swift */; };
+		4823FD4F2A666CAC00F54F67 /* CookingRecipesStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD4E2A666CAC00F54F67 /* CookingRecipesStructs.swift */; };
+		4823FD532A67196E00F54F67 /* SearchBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD522A67196E00F54F67 /* SearchBarComponent.swift */; };
+		4823FD552A67495100F54F67 /* TableViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD542A67495100F54F67 /* TableViewComponent.swift */; };
+		4823FD592A68762000F54F67 /* RecipDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		4823FD382A66680A00F54F67 /* CookingRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookingRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823FD3C2A66680A00F54F67 /* CookingRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingRecipesUITests.swift; sourceTree = "<group>"; };
 		4823FD3E2A66680A00F54F67 /* CookingRecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingRecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4823FD4C2A6668F000F54F67 /* NetworkConnectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectData.swift; sourceTree = "<group>"; };
+		4823FD4E2A666CAC00F54F67 /* CookingRecipesStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingRecipesStructs.swift; sourceTree = "<group>"; };
+		4823FD522A67196E00F54F67 /* SearchBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponent.swift; sourceTree = "<group>"; };
+		4823FD542A67495100F54F67 /* TableViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewComponent.swift; sourceTree = "<group>"; };
+		4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		4823FD1A2A66680400F54F67 /* CookingRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				4823FD572A6875EF00F54F67 /* ViewController */,
+				4823FD502A67193C00F54F67 /* Components */,
+				4823FD4B2A66685A00F54F67 /* NetworkData */,
 				4823FD1B2A66680400F54F67 /* AppDelegate.swift */,
 				4823FD1D2A66680400F54F67 /* SceneDelegate.swift */,
 				4823FD1F2A66680400F54F67 /* ViewController.swift */,
@@ -125,6 +138,48 @@
 				4823FD3E2A66680A00F54F67 /* CookingRecipesUITestsLaunchTests.swift */,
 			);
 			path = CookingRecipesUITests;
+			sourceTree = "<group>";
+		};
+		4823FD4B2A66685A00F54F67 /* NetworkData */ = {
+			isa = PBXGroup;
+			children = (
+				4823FD4C2A6668F000F54F67 /* NetworkConnectData.swift */,
+				4823FD4E2A666CAC00F54F67 /* CookingRecipesStructs.swift */,
+			);
+			path = NetworkData;
+			sourceTree = "<group>";
+		};
+		4823FD502A67193C00F54F67 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4823FD562A67495B00F54F67 /* TableView */,
+				4823FD512A67194D00F54F67 /* SearchBar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4823FD512A67194D00F54F67 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				4823FD522A67196E00F54F67 /* SearchBarComponent.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		4823FD562A67495B00F54F67 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				4823FD542A67495100F54F67 /* TableViewComponent.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		4823FD572A6875EF00F54F67 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4823FD202A66680400F54F67 /* ViewController.swift in Sources */,
+				4823FD4D2A6668F000F54F67 /* NetworkConnectData.swift in Sources */,
 				4823FD1C2A66680400F54F67 /* AppDelegate.swift in Sources */,
+				4823FD552A67495100F54F67 /* TableViewComponent.swift in Sources */,
+				4823FD532A67196E00F54F67 /* SearchBarComponent.swift in Sources */,
+				4823FD592A68762000F54F67 /* RecipDescriptionViewController.swift in Sources */,
 				4823FD1E2A66680400F54F67 /* SceneDelegate.swift in Sources */,
+				4823FD4F2A666CAC00F54F67 /* CookingRecipesStructs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

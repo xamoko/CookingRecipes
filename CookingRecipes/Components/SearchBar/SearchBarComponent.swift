@@ -8,30 +8,39 @@
 import Foundation
 import UIKit
 
-class SearchBarComponent: UIView {
-    
-    //initWithFrame to init view from code
+class SearchBarComponent: UISearchBar, UISearchBarDelegate {
+
       override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
-          textView()
+        //setupView()
+        //textView()
           print("searchBar1")
+          searchBarStyle = UISearchBar.Style.default
+          placeholder = " Search..."
+          sizeToFit()
+          isTranslucent = false
+          backgroundImage = UIImage()
+          delegate = self
+          translatesAutoresizingMaskIntoConstraints = false
+          NSLayoutConstraint.activate([
+            self.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            self.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
+            self.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),
+            self.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
+          ])
       }
-      
-      //initWithCode to init view from xib or storyboard
+
       required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-          setupView()
-          textView()
+          //setupView()
+          //textView()
           print("searchBar2")
       }
-    
-    //common func to init our view
+
       private func setupView() {
-          //self.backgroundColor = .red
           self.translatesAutoresizingMaskIntoConstraints = false
       }
-    
+
     private func textView() {
         let textView = UITextView()
         textView.contentInsetAdjustmentBehavior = .automatic
@@ -47,7 +56,7 @@ class SearchBarComponent: UIView {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.layer.cornerRadius = 8
         addSubview(textView)
-        
+
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             textView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),

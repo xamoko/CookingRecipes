@@ -66,10 +66,12 @@ struct CoockList: Codable {
     
     let name: String
     let thumbnail_url: String
+    let description: String
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
         case thumbnail_url = "thumbnail_url"
+        case description = "description"
     }
 
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4823FD1C2A66680400F54F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD1B2A66680400F54F67 /* AppDelegate.swift */; };
-		4823FD1E2A66680400F54F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD1D2A66680400F54F67 /* SceneDelegate.swift */; };
 		4823FD202A66680400F54F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD1F2A66680400F54F67 /* ViewController.swift */; };
 		4823FD232A66680400F54F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4823FD212A66680400F54F67 /* Main.storyboard */; };
 		4823FD252A66680A00F54F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4823FD242A66680A00F54F67 /* Assets.xcassets */; };
@@ -19,8 +18,12 @@
 		4823FD4D2A6668F000F54F67 /* NetworkConnectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD4C2A6668F000F54F67 /* NetworkConnectData.swift */; };
 		4823FD4F2A666CAC00F54F67 /* CookingRecipesStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD4E2A666CAC00F54F67 /* CookingRecipesStructs.swift */; };
 		4823FD532A67196E00F54F67 /* SearchBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD522A67196E00F54F67 /* SearchBarComponent.swift */; };
-		4823FD552A67495100F54F67 /* TableViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD542A67495100F54F67 /* TableViewComponent.swift */; };
 		4823FD592A68762000F54F67 /* RecipDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */; };
+		4833BDCD2A6A24090022B942 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833BDCC2A6A24090022B942 /* CardViewController.swift */; };
+		4833BDCF2A6A3B9F0022B942 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833BDCE2A6A3B9F0022B942 /* ImageViewController.swift */; };
+		4833BDD22A6B94810022B942 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4833BDD12A6B94810022B942 /* Kingfisher */; };
+		4833BDD42A6B99B60022B942 /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833BDD32A6B99B60022B942 /* TableViewCellController.swift */; };
+		4833BDD62A6BB94D0022B942 /* GeolocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4833BDD52A6BB94D0022B942 /* GeolocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,6 @@
 /* Begin PBXFileReference section */
 		4823FD182A66680400F54F67 /* CookingRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823FD1B2A66680400F54F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4823FD1D2A66680400F54F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4823FD1F2A66680400F54F67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4823FD222A66680400F54F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4823FD242A66680A00F54F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,8 +59,11 @@
 		4823FD4C2A6668F000F54F67 /* NetworkConnectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectData.swift; sourceTree = "<group>"; };
 		4823FD4E2A666CAC00F54F67 /* CookingRecipesStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingRecipesStructs.swift; sourceTree = "<group>"; };
 		4823FD522A67196E00F54F67 /* SearchBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarComponent.swift; sourceTree = "<group>"; };
-		4823FD542A67495100F54F67 /* TableViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewComponent.swift; sourceTree = "<group>"; };
 		4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipDescriptionViewController.swift; sourceTree = "<group>"; };
+		4833BDCC2A6A24090022B942 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		4833BDCE2A6A3B9F0022B942 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4833BDD32A6B99B60022B942 /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
+		4833BDD52A6BB94D0022B942 /* GeolocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4833BDD22A6B94810022B942 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +119,6 @@
 				4823FD502A67193C00F54F67 /* Components */,
 				4823FD4B2A66685A00F54F67 /* NetworkData */,
 				4823FD1B2A66680400F54F67 /* AppDelegate.swift */,
-				4823FD1D2A66680400F54F67 /* SceneDelegate.swift */,
 				4823FD1F2A66680400F54F67 /* ViewController.swift */,
 				4823FD212A66680400F54F67 /* Main.storyboard */,
 				4823FD242A66680A00F54F67 /* Assets.xcassets */,
@@ -154,6 +159,8 @@
 			children = (
 				4823FD562A67495B00F54F67 /* TableView */,
 				4823FD512A67194D00F54F67 /* SearchBar */,
+				4833BDCC2A6A24090022B942 /* CardViewController.swift */,
+				4833BDCE2A6A3B9F0022B942 /* ImageViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -169,7 +176,7 @@
 		4823FD562A67495B00F54F67 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				4823FD542A67495100F54F67 /* TableViewComponent.swift */,
+				4833BDD32A6B99B60022B942 /* TableViewCellController.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4823FD582A68762000F54F67 /* RecipDescriptionViewController.swift */,
+				4833BDD52A6BB94D0022B942 /* GeolocationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -198,6 +206,9 @@
 			dependencies = (
 			);
 			name = CookingRecipes;
+			packageProductDependencies = (
+				4833BDD12A6B94810022B942 /* Kingfisher */,
+			);
 			productName = CookingRecipes;
 			productReference = 4823FD182A66680400F54F67 /* CookingRecipes.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +281,9 @@
 				Base,
 			);
 			mainGroup = 4823FD0F2A66680400F54F67;
+			packageReferences = (
+				4833BDD02A6B94800022B942 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4823FD192A66680400F54F67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -314,12 +328,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4823FD202A66680400F54F67 /* ViewController.swift in Sources */,
+				4833BDCF2A6A3B9F0022B942 /* ImageViewController.swift in Sources */,
 				4823FD4D2A6668F000F54F67 /* NetworkConnectData.swift in Sources */,
 				4823FD1C2A66680400F54F67 /* AppDelegate.swift in Sources */,
-				4823FD552A67495100F54F67 /* TableViewComponent.swift in Sources */,
+				4833BDCD2A6A24090022B942 /* CardViewController.swift in Sources */,
+				4833BDD62A6BB94D0022B942 /* GeolocationViewController.swift in Sources */,
 				4823FD532A67196E00F54F67 /* SearchBarComponent.swift in Sources */,
 				4823FD592A68762000F54F67 /* RecipDescriptionViewController.swift in Sources */,
-				4823FD1E2A66680400F54F67 /* SceneDelegate.swift in Sources */,
+				4833BDD42A6B99B60022B942 /* TableViewCellController.swift in Sources */,
 				4823FD4F2A666CAC00F54F67 /* CookingRecipesStructs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4833BDD02A6B94800022B942 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4833BDD12A6B94810022B942 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4833BDD02A6B94800022B942 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4823FD102A66680400F54F67 /* Project object */;
 }

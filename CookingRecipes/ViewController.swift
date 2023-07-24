@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    private var myTableView: UITableView!
+    var myTableView: UITableView!
     lazy var searchBar:UISearchBar = UISearchBar()
     var initPresenter = NetworkConnectData()
     var recipeData: [CoockList] = []

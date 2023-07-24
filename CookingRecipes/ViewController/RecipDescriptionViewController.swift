@@ -41,12 +41,22 @@ class RecipDescriptionViewController: UIViewController {
         geoButton.addTarget(self, action: #selector(mapRecip), for: .touchUpInside)
         return geoButton
     }()
+    
+    private let scrollView: UIScrollView = {
+    let view = UIScrollView()
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
+    }()
 
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 205/255, green: 201/255, blue: 195/255, alpha: 1.0)
         self.title = self.name
         view.addSubview(cardView)
+            
+       scrollView.contentSize = CGSize.init(width: self.view.frame.width, height: 700)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        cardView.addSubview(scrollView)
 
         customImage()
         customDescription()
@@ -55,15 +65,20 @@ class RecipDescriptionViewController: UIViewController {
         let safeAreaOut = view.layoutMarginsGuide
 
         NSLayoutConstraint.activate([
-            cardView.topAnchor.constraint(equalTo: safeAreaIn.topAnchor, constant: 0),
+            cardView.topAnchor.constraint(equalTo: safeAreaIn.topAnchor, constant: 10),
             cardView.leadingAnchor.constraint(equalTo: safeAreaIn.leadingAnchor, constant: 10),
             cardView.trailingAnchor.constraint(equalTo: safeAreaIn.trailingAnchor, constant: -10),
             cardView.bottomAnchor.constraint(equalTo: safeAreaIn.bottomAnchor, constant: 0),
             
-            cardView.topAnchor.constraint(equalTo: safeAreaOut.topAnchor, constant: 0),
+            cardView.topAnchor.constraint(equalTo: safeAreaOut.topAnchor, constant: 10),
             cardView.leadingAnchor.constraint(equalTo: safeAreaOut.leadingAnchor, constant: 10),
             cardView.trailingAnchor.constraint(equalTo: safeAreaOut.trailingAnchor, constant: -10),
-            cardView.bottomAnchor.constraint(equalTo: safeAreaOut.bottomAnchor, constant: -10)
+            cardView.bottomAnchor.constraint(equalTo: safeAreaOut.bottomAnchor, constant: -10),
+            
+            scrollView.topAnchor.constraint(equalTo: safeAreaOut.topAnchor, constant: 10),
+            scrollView.leadingAnchor.constraint(equalTo: safeAreaOut.leadingAnchor, constant: 10),
+            scrollView.trailingAnchor.constraint(equalTo: safeAreaOut.trailingAnchor, constant: -10),
+            scrollView.bottomAnchor.constraint(equalTo: safeAreaOut.bottomAnchor, constant: -10)
         ])
     }
     
@@ -72,13 +87,13 @@ class RecipDescriptionViewController: UIViewController {
         let url = URL(string: imageName)
         someImageView.kf.setImage(with: url)
         someImageView.backgroundColor = .black
-        cardView.addSubview(someImageView)
+        scrollView.addSubview(someImageView)
 
         NSLayoutConstraint.activate([
-            someImageView.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 10),
+            someImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 10),
             someImageView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 10),
             someImageView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -10),
-            someImageView.bottomAnchor.constraint(equalTo: cardView.topAnchor, constant: 300)
+            someImageView.bottomAnchor.constraint(equalTo: scrollView.topAnchor, constant: 300)
         ])
     }
 
@@ -86,8 +101,8 @@ class RecipDescriptionViewController: UIViewController {
         someLabel.text = descriptionRecipe.isEmpty ? "Description not available" : descriptionRecipe
         someLabel.font = UIFont.systemFont(ofSize: 20)
 
-        cardView.addSubview(someLabel)
-        cardView.addSubview(geoButton)
+        scrollView.addSubview(someLabel)
+        scrollView.addSubview(geoButton)
 
         NSLayoutConstraint.activate([
             someLabel.topAnchor.constraint(equalTo: someImageView.bottomAnchor, constant: 50),

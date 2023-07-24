@@ -32,9 +32,6 @@ class SearchBarComponent: UISearchBar, UISearchBarDelegate {
 
       required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-          //setupView()
-          //textView()
-          print("searchBar2")
       }
 
       private func setupView() {

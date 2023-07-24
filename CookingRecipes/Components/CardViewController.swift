@@ -18,6 +18,8 @@ class CardViewController: UIView {
             self.layer.shadowOpacity = 1
             self.layer.shadowOffset = CGSizeMake(3, 3)
             self.layer.borderWidth = 1
+            self.isUserInteractionEnabled = true
+            self.isMultipleTouchEnabled = true
             self.translatesAutoresizingMaskIntoConstraints = false
         }
 

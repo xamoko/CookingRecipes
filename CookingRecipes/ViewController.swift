@@ -20,10 +20,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         initPresenter.apiConnection()
         self.initPresenter.passingDataDeleate = self
-        print("runApp")
         let guide = view.safeAreaLayoutGuide
         let margins = view.layoutMarginsGuide
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .white
         self.title = "Tasty Recipes"
         
         searchBar.searchBarStyle = UISearchBar.Style.default
@@ -37,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         addTable()
         
         NSLayoutConstraint.activate([
-            searchBar.topAnchor.constraint(equalTo: guide.topAnchor, constant: 12),
+            searchBar.topAnchor.constraint(equalTo: guide.topAnchor, constant: 0),
             searchBar.leadingAnchor.constraint(equalTo: guide.leadingAnchor, constant: 0),
             searchBar.trailingAnchor.constraint(equalTo: guide.trailingAnchor, constant: 0),
             searchBar.bottomAnchor.constraint(equalTo: guide.topAnchor, constant: 70)
@@ -64,7 +63,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.searchRecipesData.isEmpty ? self.recipeData.count : searchRecipesData.count
-        //return recipeData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
